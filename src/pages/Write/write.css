@@ -1,0 +1,87 @@
+.write {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1400px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    transform: translate3d(0, 0, 1px);
+    border-radius: 10px;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.formItems {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formTop {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.writeTitle {
+    width: 70%;
+    height: 50px;
+    border: none;
+    font-family: "Lora", sans-serif;
+    font-size: 2.5rem;
+    margin: 0 auto;
+}
+
+.writeTitle:focus {
+    outline: none;
+}
+
+.formItems textarea {
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Varela', sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    resize: none;
+}
+
+.formItems textarea:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1350px) {
+    .write {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1065px) {
+    .write {
+        margin-top: 90px;
+    }
+
+    .writeTitle {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .formItems textarea {
+        margin-top: 0;
+    }
+
+    .write-publish {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

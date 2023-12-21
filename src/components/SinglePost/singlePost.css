@@ -1,0 +1,65 @@
+.singlePost {
+    flex: 9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.singlePost > img {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    transform: translate3d(0, 0, 1px);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.titleSection {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleSection .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    flex-grow: 1;
+    font-family: "Lora", sans-serif;
+}
+
+.titleSection .actionButtons {
+    font-size: 1.2rem;
+}
+
+.subTitles {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    color: rgb(214, 157, 1);
+}
+
+.description {
+    width: 90%;
+    color: #666;
+    line-height: 25px;
+    font-size: 1.05rem;
+}
+
+.description::first-letter {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 935px) {
+    .singlePost {
+        flex:none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }

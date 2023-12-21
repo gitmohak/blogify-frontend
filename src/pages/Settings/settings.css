@@ -1,0 +1,145 @@
+.settingsContainer {
+    display: flex;
+    margin: 10px 0;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settings {
+    flex: 9;
+    font-family: 'Lora', serif;
+}
+
+.settings img {
+    width: 300px;
+    border-radius: 10px;
+    transform: translate3d(0, 0, 1px);
+}
+
+.innerSettings {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.innerSettings h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.settingsTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.settingsTop button {
+    height: 60px;
+}
+
+.settingsTop p {
+    align-self: center;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.profileHeader {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin: 40px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.profileChange {
+    width: 58%;
+}
+
+.profileChange label {
+    align-self: center;
+}
+
+.username {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.1rem;
+    width: 60%;
+    font-family: 'Lora', serif;
+}
+
+.username:focus {
+    outline: none;
+}
+
+.submitButton {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profileChange span {
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+.responsive-delete {
+    display: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1065px) {
+    .settingsContainer {
+        margin-top: 80px;
+    }
+
+    .settingsTop {
+        justify-content: flex-start;
+    }
+
+    .settingsTop h1 {
+        width: 100%;
+    }
+
+    .settingsTop button {
+        display: none;
+    }
+
+    .responsive-delete {
+        display: inline;
+    }
+
+    .profileHeader {
+        margin: 20px 0;
+    }
+
+    .profileChange {
+        width: 100%;
+    }
+
+    .profileChange span {
+        left: 60%;
+    }
+
+    .submitButton {
+        display: flex;
+        flex-flow: column wrap;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .profileChange span {
+        left: 75%;
+    }
+  }
