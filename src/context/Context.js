@@ -4,9 +4,9 @@ import Reducer from "./Reducer";
 
 let initialUser = null;
 
-if(localStorage.getItem("user") && localStorage.getItem("user") !== "bnVsbA==") {
+if(localStorage.getItem("user") && localStorage.getItem("user") !== "bnVsbA==" && localStorage.getItem("user") !== "null")
     initialUser = JSON.parse(window.atob(localStorage.getItem("user")));
-}
+
 
 const INITIAL_STATE = {
     user: initialUser,
