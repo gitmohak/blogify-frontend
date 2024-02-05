@@ -1,4 +1,3 @@
-
 # Blogify
 
 A beautiful website to showcase the fantastic usage of advanced Full Stack (MERN) Web Development technologies including React JS, Node JS, Mongo DB, Express JS, Advanced JavaScript, Bootstrap, HTML, CSS, Node Package Manager, many useful libraries, and advanced programming techniques. Additionally, this website is fully responsive.
